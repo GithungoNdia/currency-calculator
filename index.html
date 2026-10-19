@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KSh Income Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="calculator-box">
+        <h2>Remote Earnings Tracker</h2>
+        <p class="subtitle">Convert USD stipends to KSh & plan your monthly budget</p>
+
+        <!-- Input Fields -->
+        <div class="input-group">
+            <label for="usdAmount">Enter Amount (USD $):</label>
+            <input type="number" id="usdAmount" placeholder="e.g. 150" min="0">
+        </div>
+
+        <div class="input-group">
+            <label for="exchangeRate">Exchange Rate (1 USD to KSh):</label>
+            <input type="number" id="exchangeRate" value="129" step="0.1">
+        </div>
+
+        <button id="calcBtn">Calculate Total Earnings</button>
+
+        <!-- Results Display Display -->
+        <div class="results-section" id="results" style="display: none;">
+            <h3>Results Breakdown:</h3>
+            <p>Gross Income: <strong id="grossKsh">0.00 KSh</strong></p>
+            <hr>
+            <h4>Suggested 20,000 KSh Budget Allocation:</h4>
+            <p>Internet & Power Fund (15%): <span id="internetFund">0.00 KSh</span></p>
+            <p>Savings & Upskilling (25%): <span id="savingsFund">0.00 KSh</span></p>
+            <p>Living Expenses / Take-home (60%): <span id="livingFund">0.00 KSh</span></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
